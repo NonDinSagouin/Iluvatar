@@ -26,7 +26,7 @@ add-aliases: backup-zshrc
 	@echo "alias c='clear'" >> $(ZSHRC_FILE)
 	@echo "alias zshconfig='code ~/.zshrc'" >> $(ZSHRC_FILE)
 	@echo "alias reload='source ~/.zshrc'" >> $(ZSHRC_FILE)
-	@echo "alias help='make -C ~/Finwë/command help-aliases'" >> $(ZSHRC_FILE)
+	@echo "alias help='make -C ~/Ilúvatar/command help-aliases'" >> $(ZSHRC_FILE)
 	@echo "" >> $(ZSHRC_FILE)
 	@echo "# === Alias Docker ===" >> $(ZSHRC_FILE)
 	@echo "alias d='docker'" >> $(ZSHRC_FILE)
@@ -119,7 +119,7 @@ clean:
 
 # Aide détaillée pour les alias
 help-aliases:
-	@echo "🎨 Guide des Alias - Projet Finwë"
+	@echo "🎨 Guide des Alias - Projet Ilúvatar"
 	@echo ""
 	@echo "🛠️  === ALIAS SYSTÈME ==="
 	@echo "  ll                       - ls -alF (listing détaillé avec types)"

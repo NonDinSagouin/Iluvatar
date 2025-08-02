@@ -1,6 +1,6 @@
-# 🎯 Projet Finwë
+# 🎯 Projet Ilúvatar 
 
-**Finwë** est un système d'automatisation pour la configuration d'environnements de développement Linux. Il utilise des Makefiles modulaires pour installer et configurer automatiquement les outils essentiels, Docker et l'environnement terminal.
+**Ilúvatar** est un système d'automatisation pour la configuration d'environnements de développement Linux. Il utilise des Makefiles modulaires pour installer et configurer automatiquement les outils essentiels, Docker et l'environnement terminal.
 
 ---
 
@@ -25,7 +25,7 @@
 ## 📁 Structure du Projet
 
 ```
-Finwë/
+Ilúvatar/
 ├── 📄 README.md              # Documentation principale
 ├── 📄 ICONS.md               # Guide des icônes utilisées
 ├── 📄 makefile               # Makefile principal d'orchestration

@@ -1,4 +1,4 @@
-# 🎨 Guide des Icônes - Projet Finwë
+# 🎨 Guide des Icônes - Projet Ilúvatar
 
 Ce fichier documente toutes les icônes utilisées dans les Makefiles et leur signification.
 
@@ -119,4 +119,4 @@ Icônes suggérées pour de futurs développements :
 
 ---
 
-*Ce guide est maintenu à jour avec l'évolution du projet Finwë.*
+*Ce guide est maintenu à jour avec l'évolution du projet Ilúvatar.*
