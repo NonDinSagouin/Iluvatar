@@ -20,6 +20,44 @@
 - ✅ Gestion modulaire par Makefiles
 - ✅ Documentation des icônes
 
+## 📊 Commandes Principales
+
+| Commande | Description |
+|----------|-------------|
+| `make help` | 📋 Afficher l'aide générale |
+| `make setup-all` | 🚀 Installation complète de l'environnement |
+| `make setup-tools` | 🛠️ Installer les outils de base |
+| `make setup-docker` | 🐳 Installer et configurer Docker |
+| `make setup-console` | 📱 Configurer le terminal (zsh + oh-my-zsh) |
+| `make status` | 📊 Vérifier l'état de tous les composants |
+| `make clean-all` | 🧹 Nettoyage général du système |
+
+---
+
+## ✅ Prérequis
+
+- **OS :** Ubuntu/Debian Linux
+- **Make :** `sudo apt install make`
+- **Zsh :** `sudo apt install zsh`
+- **Shell :** zsh (sera installé automatiquement)
+- **Droits :** Accès sudo pour l'installation des paquets
+- **Réseau :** Connexion internet pour télécharger les composants
+
+## 🚀 Installation Rapide
+```bash
+# 1. Installation des prérequis
+sudo apt install make zsh
+
+# 2. Lancer zsh
+zsh
+
+# 3. Installation complète (recommandé)
+make setup-all
+
+# 4. Redémarrer le terminal
+exec zsh
+```
+
 ---
 
 ## 📁 Structure du Projet
@@ -42,8 +80,6 @@ Ilúvatar/
 └── 💻 command/              # Gestion des alias
     └── makefile              # Création d'alias personnalisés
 ```
-
----
 
 ## 📋 Description des Dossiers
 
@@ -129,35 +165,3 @@ make -C command restore-zshrc      # Restaurer .zshrc
 ```
 
 ---
-
-## 🚀 Installation Rapide
-```bash
-# Installation complète (recommandé)
-make setup-all
-
-# Redémarrer le terminal
-exec zsh
-```
-
----
-
-## 📊 Commandes Principales
-
-| Commande | Description |
-|----------|-------------|
-| `make help` | 📋 Afficher l'aide générale |
-| `make setup-all` | 🚀 Installation complète de l'environnement |
-| `make setup-tools` | 🛠️ Installer les outils de base |
-| `make setup-docker` | 🐳 Installer et configurer Docker |
-| `make setup-console` | 📱 Configurer le terminal (zsh + oh-my-zsh) |
-| `make status` | 📊 Vérifier l'état de tous les composants |
-| `make clean-all` | 🧹 Nettoyage général du système |
-
----
-
-## ✅ Prérequis
-
-- **OS :** Ubuntu/Debian Linux
-- **Shell :** zsh (sera installé automatiquement)
-- **Droits :** Accès sudo pour l'installation des paquets
-- **Réseau :** Connexion internet pour télécharger les composants
