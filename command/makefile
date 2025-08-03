@@ -6,7 +6,7 @@ ALIASES_FILE = aliases.txt
 
 # Ajouter les alias au .zshrc
 add-aliases: backup-zshrc
-	@echo "Ajout des alias dans $(ZSHRC_FILE)..."
+	@echo "🔄 Ajout des alias dans $(ZSHRC_FILE)..."
 	@echo "" >> $(ZSHRC_FILE)
 	@echo "# ================================" >> $(ZSHRC_FILE)
 	@echo "# Custom aliases added by Makefile" >> $(ZSHRC_FILE)
@@ -76,8 +76,8 @@ add-aliases: backup-zshrc
 	@echo "alias pytest='python -m pytest'" >> $(ZSHRC_FILE)
 	@echo "alias serve='python -m http.server'" >> $(ZSHRC_FILE)
 	@echo "" >> $(ZSHRC_FILE)
-	@echo "✅ Alias ajoutés avec succès!"
-	@echo "Exécutez 'source ~/.zshrc' ou redémarrez votre terminal pour activer les alias."
+	@echo "🎉 Alias ajoutés avec succès!"
+	@echo "⚠️ Exécutez 'source ~/.zshrc' ou redémarrez votre terminal pour activer les alias."
 
 # Créer une sauvegarde du .zshrc
 backup-zshrc:
@@ -95,7 +95,7 @@ restore-zshrc:
 		cp $(BACKUP_FILE) $(ZSHRC_FILE); \
 		echo "✅ Fichier .zshrc restauré depuis la sauvegarde"; \
 	else \
-		echo "Aucune sauvegarde trouvée"; \
+		echo "❌ Aucune sauvegarde trouvée"; \
 	fi
 
 # Ajouter des alias personnalisés depuis un fichier
@@ -104,9 +104,9 @@ add-custom-aliases: backup-zshrc
 		echo "" >> $(ZSHRC_FILE); \
 		echo "# Custom aliases from $(ALIASES_FILE)" >> $(ZSHRC_FILE); \
 		cat $(ALIASES_FILE) >> $(ZSHRC_FILE); \
-		echo "Alias personnalisés ajoutés depuis $(ALIASES_FILE)"; \
+		echo "✅ Alias personnalisés ajoutés depuis $(ALIASES_FILE)"; \
 	else \
-		echo "Fichier $(ALIASES_FILE) non trouvé"; \
+		echo "❌ Fichier $(ALIASES_FILE) non trouvé"; \
 		echo "Créez un fichier $(ALIASES_FILE) avec vos alias (format: alias nom='commande')"; \
 	fi
 

@@ -34,13 +34,13 @@ status:
 	@$(MAKE) -C docker status
 	@echo ""
 	@echo "=== 📱 Console ==="
-	@test -d ~/.oh-my-zsh && echo "✓ oh-my-zsh installé" || echo "✗ oh-my-zsh non installé"
+	@test -d ~/.oh-my-zsh && echo "✅ oh-my-zsh installé" || echo "❌ oh-my-zsh non installé"
 	@echo ""
 	@echo "=== 💻 Alias ==="
 	@if grep -q "Custom aliases added by Makefile" ~/.zshrc 2>/dev/null; then \
-		echo "✓ Alias personnalisés configurés"; \
+		echo "✅ Alias personnalisés configurés"; \
 	else \
-		echo "✗ Alias personnalisés non configurés"; \
+		echo "❌ Alias personnalisés non configurés"; \
 	fi
 
 # Nettoyage général
